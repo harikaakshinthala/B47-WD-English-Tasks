@@ -1,0 +1,76 @@
+var studentDetail={
+    fname:"harika",
+    age:"23",
+    lname:"singh"
+}
+//for in loop
+for(key in studentDetail){
+    console.log(studentDetail[key])
+}
+//for loop
+var cars=["bmw","alto","nano"]
+for (let i = 0; i < cars.length; ++i) {
+    const element = cars[i];
+    console.log(element);
+}
+//for of loop
+
+var cars=["bmw","alto","nano"]
+for(element of cars){
+    console.log(element)
+}
+
+
+
+// //for each loop
+cars.forEach((element)=>{
+    console.log(element)
+})
+
+//Resume in JSON
+resumeDetail = {
+  
+  "personalDetails": [
+    "name": "",
+    
+    "email": "",
+    "phone": "",
+    "degree": "",
+    
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+    
+    }],
+   
+  },
+  "work": [
+    {
+      "company": "",
+      "position": "",
+      "experience": "",
+      "startDate": "",
+      "endDate": "",
+    }
+  ],
+ 
+  
+  "education": [
+    {
+      "institution": "",
+         "group": "",
+      "startDate": "",
+      "endDate": "",
+      
+      "courses":  ""
+    
+    }
+  ],
+ 
+ 
+
+
+
+
