@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         Below programs in anonymous function & IIFE
+// 1.Print odd numbers in an array
+//IIFE function
+(function(arr){
+    for(var i=0;i<arr.length;i++){
+ if(arr[i]%2 !==0){
+
+console.log(arr[i])
+ }
+}
+}
+)([1,2,3,4,5])
+//Anonymus function
+var oddAnnonymus=function(arr){
+    for(var i=0;i<arr.length;i++){
+ if(arr[i]%2 !==0){
+
+console.log(arr[i])
+ }
+}
+}
+oddAnnonymus([1,2,3,4,5])
+//arrow function
+var oddArray=(arr)=>{
+    for(var i=0;i<arr.length;i++){
+ if(arr[i]%2 !==0){
+
+console.log(arr[i])
+ }
+}
+}
+oddArray([1,2,3,4,5])
+
+// 2.Convert all the strings to title caps in a string array
+//IIFE
+// (function(str) {
+//   str = str.toLowerCase().split(' ');
+//   for (var i = 0; i < str.length; i++) {
+//     str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+//   }
+//   return str.join(' ');
+// })
+// console.log(toTitleCase)
+// ("GUVI GEEK")
+//anonymus function
+var toTitleCase=function(str) {
+  str = str.toLowerCase().split(' ');
+  for (var i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+  }
+  return str.join(' ');
+}
+console.log(toTitleCase("GUVI GEEK"));
+
+//3. Sum of all numbers in an array
+
+//IIFE function
+(function(arr){
+var sum=0;
+for(var i=0;i<arr.length;i++){
+
+sum=sum+arr[i]
+}
+console.log(sum)
+}
+
+)([1,2,3,4,5])
+
+//with anonymus function
+var sumAnnonymus=function(arr){
+    var sum=0;
+    for(var i=0;i<arr.length;i++){
+
+sum=sum+arr[i]
+}
+console.log(sum)
+}
+
+sumAnnonymus([1,2,3,4,5])
+//arrow function
+var sumArray=(arr)=>{
+    var sum=0;
+    for(var i=0;i<arr.length;i++){
+
+sum=sum+arr[i]
+}
+console.log(sum)
+}
+
+sumArray([1,2,3,4,5])
+// Return all the prime numbers in an array
+
+//arrow function
+var arr = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+arr = arr.filter((number) => {
+for (var i = 2; i <= Math.sqrt(number); i++) {
+if (number % i === 0) return false;
+}
+return true;
+});
+console.log(arr);
+// Return all the palindromes in an array
+// Return median of two sorted arrays of the same size.
+// Remove duplicates from an array
+// Rotate an array by k times
+
+    </script>
+    
+</body>
+</html>
