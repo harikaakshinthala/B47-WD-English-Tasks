@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Class - Movie
+        class Movie {
+            constructor(title, studio, rating) {
+                this.title = title,
+                    this.studio = studio
+                //this.rating=rating
+                if (rating == null) {
+                    this.rating = "PG"
+                }
+                else {
+                    this.rating = rating
+
+                }
+            }
+            //method
+            getPG(){
+console.log("GETPG is called")
+let pgResult=[];
+for(let i=0;i<arr.length;i++){
+if(arr[i].rating=="PG"){
+    //console.log(arr[i])
+pgResult.push(arr[i])
+
+}
+console.log(pgResult)
+}
+
+            }
+        }
+
+        var film1 = new Movie("Casino Royale", "Eon Productions", "PG13")
+        var film2 = new Movie("Cdscwe", "Escwc")
+        var film3 = new Movie("Cevb", "Eon Productions","PG6")
+        var film4 = new Movie("Cvevee", "Eon Productions")
+        var film5 = new Movie("Cvewvee", "Eon Productions")
+
+       // console.log(film2)
+       // console.log(film1)
+        const arr=[film1,film2,film3,film4,film5]
+       // console.log(arr)
+        film1.getPG()
+
+       
+    </script>
+</body>
+
+</html>
